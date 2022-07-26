@@ -1,0 +1,22 @@
+{
+  "name": "@ticketschu/common",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./build/index.js",
+  "types": "",
+  "files":[
+    "build/**/*"
+  ],
+  "scripts": {
+    "clean": "del ./build/*",
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "del-cli": "^5.0.0",
+    "typescript": "^4.7.4"
+  }
+}
