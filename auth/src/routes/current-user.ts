@@ -1,10 +1,10 @@
 import express from 'express';
 import jwt from 'jsonwebtoken';
-import { currentUser } from '../middlewares/current-user';
-import { requireAuth } from '../middlewares/require-auth'
+import { currentUser } from '@ticketschu/common';
+import { requireAuth } from '@ticketschu/common';
 const router = express.Router();
 
-router.get('/api/users/currentuser', currentUser, requireAuth, (req, res) => {
+router.get('/api/users/currentuser', currentUser, (req, res) => {
 //   if (!req.session?.jwt) {
 //     return res.send({ currentUser: null });
 //   }
