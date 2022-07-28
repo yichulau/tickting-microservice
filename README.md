@@ -7,3 +7,6 @@ Create a simple ticketing system using microservice architecture:
 - NodeJS
 - ReactJS
 - Jest
+
+
+** Ignore nats-test
