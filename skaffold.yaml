@@ -31,7 +31,15 @@ build:
       sync:
         manual:
           - src: "src/**/*.ts"
-            dest: .                
+            dest: .     
+    - image: yichu21/expiration
+      context: expiration
+      docker:
+        dockerfile: Dockerfile
+      sync:
+        manual:
+          - src: "src/**/*.ts"
+            dest: .                           
     - image: yichu21/client
       context: client
       docker:
