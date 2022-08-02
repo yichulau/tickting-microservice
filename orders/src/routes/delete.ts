@@ -7,7 +7,6 @@ import {
 import { Order, OrderStatus } from '../models/order';
 import { OrderCancelledPublisher } from '../events/publishers/order-cancelled-publisher';
 import { natsWrapper } from '../nats-wrapper';
-import mongoose from 'mongoose';
 
 const router = express.Router();
 
