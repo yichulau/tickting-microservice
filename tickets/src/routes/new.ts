@@ -14,7 +14,7 @@ requireAuth,
 ], 
 validateRequest, async (req: Request, res: Response) => {
     const { title, price } = req.body;
-
+    console.log(req.body)
     const ticket = Ticket.build({
         title,
         price,
